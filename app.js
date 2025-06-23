@@ -20,7 +20,6 @@ const TARGET_SITES = [
 const autoScroll = async (page) => {
     for (let i = 0; i < 3; i++) {
         await page.evaluate(() => window.scrollBy(0, 500));
-        await page.waitForTimeout(1000); // Wait between scrolls
     }
 };
 
